@@ -43,6 +43,7 @@ nav ul li a{
 /* header section end */
 
 main{
+    width: 100vw;
     background-color: rgb(4, 19, 52);
 }
 
@@ -50,6 +51,7 @@ main{
 
 main section.first{
     min-height: calc(100vh - 80.4px);
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,6 +73,7 @@ section.first .head p{
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
+    /* text-align: center; */
 }
 
 #bitcoin-text{
@@ -82,23 +85,30 @@ section.first .head p{
 
 section.first .table table{
     width: 1207px;
-    vertical-align: center;
-
+    /* vertical-align: center; */
 }
 
 section.first .table table tr th{
     text-align: start;
-    vertical-align: center;
+    height: 80px;
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
 }
 section.first .table table td{
     text-align: start;
-    vertical-align: top;
+    height: 80px;
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
+}
+section.first .table table td span{
+    vertical-align: top;
+    padding-left: 10px;
+}
+section.first .table table td span span{ 
+    vertical-align: middle;
+    padding-left: 10px;
 }
 
 section.first .btn button{
@@ -208,7 +218,7 @@ section.third .inner-third .portfolioimage .portfoliocard{
     border-radius: 50px;
     background-image: linear-gradient(to right bottom, #04133452 48%, #0f25547c 62%);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
@@ -222,10 +232,10 @@ section.third .inner-third .portfolioimage .charts img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
-.card-lines img{
-    margin-right: 20px;
+.card-lines .logo-name .name{
+    margin-left: 20px;
 }
 .card-lines{
     gap: 70px;
@@ -238,7 +248,6 @@ section.third .inner-third .portfolioimage .charts img{
     font-weight: 600;
     line-height: 54px;
     margin-bottom: 100px;
-    /* width: 426px; */
 }
 
 .inner-third .description-third .inner-descp{
@@ -275,6 +284,7 @@ footer section.footer-menu .footer-wrapper{
     margin: 104px auto;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 

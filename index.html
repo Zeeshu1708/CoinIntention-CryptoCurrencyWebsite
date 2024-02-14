@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="responsive.css">
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivenew.css">
     <title>Test</title>
 </head>
 <!-- Link of figma -->
@@ -14,7 +15,7 @@
 <body>
     <!-- Navbar section start  -->
     <header>
-        <nav>
+        <nav id="desktop-menu">
             <div class="logo">
                 <img src="./Assets/logo.svg" alt="">
             </div>
@@ -28,11 +29,32 @@
                 <img src="Assets/search-logo.svg" alt="">
             </div>
         </nav>
+        <nav class="mobile-nav ">
+            <div class="logo">
+                <img src="./Assets/logo.svg" alt="">
+            </div>
+            <ul>
+                <li><a href="#">Cryptocurrencies</a></li>
+                <li><a href="#">Exchange</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Trades</a></li>
+            </ul>
+        </nav>
+        <div class="movile-menu-btn">
+            <div class="open active">
+                <img src="./Assets/bars-solid.svg" alt="">
+            </div>
+            <div class="close ">
+                <img src="./Assets/close.svg" alt="">
+            </div>
+        </div>
     </header>
     <!-- Navbar section start  -->
 
     <!-- Main section start  -->
     <main>
+
+
 
         <!-- First section start  -->
         <section class="first">
@@ -126,7 +148,9 @@
                         </div>
                         <div class="about-icon">
                             <h3>Clarity</h3>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, ex.
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nunc vulputate libero et velit interdum, ac aliquet odio
+                                mattis..</p>
                         </div>
                     </div>
                     <div class="inner-descp">
@@ -135,7 +159,9 @@
                         </div>
                         <div class="about-icon">
                             <h3>Clarity</h3>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, ex.
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc vulputate libero et velit interdum, ac aliquet odio
+                        mattis..</p>
                         </div>
                     </div>
                     <div class="inner-descp">
@@ -144,7 +170,9 @@
                         </div>
                         <div class="about-icon">
                             <h3>Clarity</h3>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, ex.
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nunc vulputate libero et velit interdum, ac aliquet odio
+                                mattis..</p>
                         </div>
                     </div>
                 </div>
@@ -198,7 +226,7 @@
                         </div>
                         <div class="card-lines">
                             <div class="logo-name">
-                                <img src="./Assets/bitcoin-logo-white.svg" alt="">
+                                <img class="card-coin" src="./Assets/bitcoin-logo-white.svg" alt="">
                                 <div class="name">
                                     <p>Bitcoin</p>
                                     <p>BTC</p>
@@ -211,7 +239,7 @@
                         </div>
                         <div class="card-lines">
                             <div class="logo-name">
-                                <img src="./Assets/eth-white-logo.svg" alt="">
+                                <img class="card-coin" src="./Assets/eth-white-logo.svg" alt="">
                                 <div class="name">
                                     <p>Ethereum</p>
                                     <p>ETH</p>
@@ -224,7 +252,7 @@
                         </div>
                         <div class="card-lines">
                             <div class="logo-name">
-                                <img src="./Assets/lite-coin-white-logo.svg" alt="">
+                                <img class="card-coin" src="./Assets/lite-coin-white-logo.svg" alt="">
                                 <div class="name">
                                     <p>Litecoin</p>
                                     <p>LTC</p>
@@ -237,7 +265,7 @@
                         </div>
                         <div class="card-lines">
                             <div class="logo-name">
-                                <img src="./Assets/bitcoin-logo-white.svg" alt="">
+                                <img class="card-coin"  src="./Assets/bitcoin-logo-white.svg" alt="">
                                 <div class="name">
                                     <p>Bitcoin</p>
                                     <p>BTC</p>
@@ -250,7 +278,7 @@
                         </div>
                         <div class="card-lines">
                             <div class="logo-name">
-                                <img src="./Assets/eth-white-logo.svg" alt="">
+                                <img class="card-coin" src="./Assets/eth-white-logo.svg" alt="">
                                 <div class="name">
                                     <p>Ethereum</p>
                                     <p>ETH</p>
@@ -285,11 +313,11 @@
                     <div class="about">
                         <p>CoinIntention's mission is to make investing in cryptocurrencies easy and efficient.
                             CoinIntention tracks various data of cryptocurrencies and thus offers its users an overview
-                            of
-                            all cryptocurrencies available on the market and their performance, market capitalization,
+                            of all cryptocurrencies available on the market and their performance, market capitalization,
                             trading volume, etc.rencies and thus </p>
                     </div>
                 </div>
+                <div class="footer-menu-wrapper">
                 <div class="footer-menu first">
                     <h3>Company</h3>
                     <ul>
@@ -321,6 +349,7 @@
                     </ul>
                 </div>
             </div>
+        </div>
         </section>
         <!-- Footer menu Ends -->
 
@@ -330,6 +359,10 @@
         </section>
     </footer>
     <!-- Footer section Ends -->
+
+    <script src="./main.js">
+
+    </script>
 </body>
 
 </html>

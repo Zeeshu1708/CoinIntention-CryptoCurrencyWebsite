@@ -2,7 +2,7 @@
 
 @media (max-width: 1568px) {
     header{
-        display: none;
+        /* display: none; */
     }
     section.first, section.second, section.third{
         width: 100vw;

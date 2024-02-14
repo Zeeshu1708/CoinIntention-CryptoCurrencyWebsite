@@ -16,6 +16,11 @@
 }
 
 /* header section start */
+
+body {
+    position: relative;
+    z-index: 1;
+}
 header{
     width: 100vw;
     background-color: rgb(10, 25, 57);
@@ -40,17 +45,23 @@ nav ul li a{
     font-size: 15px;
     line-height: 22.5px;
 }
+.open, .close{
+    display: none;
+}
+.mobile-nav{
+    display: none;
+}
 /* header section end */
 
 main{
     width: 100vw;
-    background-color: rgb(4, 19, 52);
 }
 
 /* first section start */
 
 main section.first{
     min-height: calc(100vh - 80.4px);
+    background-color: rgb(4, 19, 52);
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -60,7 +71,7 @@ main section.first{
 }
 
 section.first .head{
-    width: 1207px;
+    width: 75vw;
     margin: 70px 0;
 }
 
@@ -135,8 +146,9 @@ main section.second{
 }
 
 main section.second .second-inner{
-    width: 1240px;
+    width: 100vw;
     margin: 104px auto;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,14 +159,14 @@ main section.second .second-inner{
     font-size: 36px;
     font-weight: 500;
     line-height: 54px;
-    width: 458px;
+    /* width: 458px; */
 }
 
 .second-inner .description-second p{
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    width: 442px;
+    /* width: 442px; */
 }
 .second-inner .description-second .inner-descp{
     margin: 50px 0;
@@ -172,12 +184,12 @@ main section.second .second-inner{
     background-color: #0F1535;
     margin: 0px;
 }
-.second-inner .description-second .about-icon h3{
+.second-inner .description-second .inner-descp .about-icon h3{
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
 }
-.second-inner .description-second .about-icon p{
+.second-inner .description-second .inner-descp .about-icon p{
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -195,8 +207,9 @@ main section.third{
     justify-content: center;
 }
 section.third .inner-third{
-    width: 1241px;
+    width: 100vw;
     margin: 104px auto;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -265,7 +278,7 @@ section.third .inner-third .portfolioimage .charts img{
      font-size: 16px;
      font-weight: 400;
      line-height: 24px;
-     width: 492px;
+     /* width: 492px; */
 }
 
 /* Third Section Ends */
@@ -274,13 +287,14 @@ section.third .inner-third .portfolioimage .charts img{
 
 footer section.footer-menu{
     background-color: #00092A;
-    width: 100%;
+    width: 100vw;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 footer section.footer-menu .footer-wrapper{
-    width: 1315px;
+    width: 100vw;
     margin: 104px auto;
     display: flex;
     justify-content: space-evenly;
@@ -299,16 +313,21 @@ footer section.footer-menu .footer-wrapper{
     line-height: 20px;
 }
 
-.footer-wrapper .footer-menu h3{
+.footer-wrapper .footer-menu-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1.5;
+}
+.footer-wrapper .footer-menu-wrapper .footer-menu h3{
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
     margin-bottom: 20px;
 }
-.footer-wrapper .footer-menu ul{
+.footer-wrapper .footer-menu-wrapper .footer-menu ul{
     list-style: none;
 }
-.footer-wrapper .footer-menu ul li a{
+.footer-wrapper .footer-menu-wrapper .footer-menu ul li a{
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
@@ -321,7 +340,7 @@ footer section.footer-menu .footer-wrapper{
 
 footer section.copyright{
     background-color: #041334;
-    width: 100%;
+    width: 100vw;
     height: 30px;
     display: flex;
     justify-content: center;
@@ -334,5 +353,3 @@ footer section.copyright p{
     line-height: 14.52px;
 }
 /* footer copyright section ends */
-
-
